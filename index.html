@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Addison Nally | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --card: #fffdf8;
+      --text: #383d35;
+      --muted: #74796f;
+      --green: #657c60;
+      --green-light: #e8ede4;
+      --border: #e7e4db;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+    }
+
+    /* Navigation */
+
+    .navbar {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .navbar-brand {
+      font-family: Georgia, serif;
+      font-size: 1.3rem;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover {
+      color: var(--green);
+    }
+
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-left: 20px;
+    }
+
+    .nav-link:hover {
+      color: var(--green);
+    }
+
+    /* Introduction */
+
+    .intro {
+      padding: 105px 0 95px;
+    }
+
+    .hello {
+      color: var(--green);
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 4.2rem);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      color: var(--muted);
+      max-width: 600px;
+      font-size: 1.1rem;
+    }
+
+    .accent {
+      color: var(--green);
+    }
+
+    /* General sections */
+
+    section {
+      padding: 60px 0;
+      scroll-margin-top: 30px;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .section-description {
+      max-width: 720px;
+      color: #596055;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0;
+      opacity: 1;
+      border: none;
+    }
+
+    /* About */
+
+    .about p {
+      max-width: 750px;
+      color: #596055;
+      margin-bottom: 20px;
+    }
+
+    /* Project */
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .project-label {
+      color: var(--green);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .project-title {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .project-tech {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+    }
+
+    .poster {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 28px;
+      background: white;
+    }
+
+    .project-card p {
+      color: #596055;
+    }
+
+    /* Skills */
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: var(--green-light);
+      color: #52654d;
+      padding: 7px 17px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 35px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 576px) {
+      .intro {
+        padding: 75px 0 65px;
+      }
+
+      section {
+        padding: 45px 0;
+      }
+
+      .project-card {
+        padding: 18px;
+      }
+
+      .nav-link {
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="navbar">
+    <div class="container d-flex flex-wrap
+                justify-content-between align-items-center">
+
+      <a class="navbar-brand" href="#">
+        Addison Nally
+      </a>
+
+      <div class="d-flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Introduction -->
+
+  <header class="intro">
+    <div class="container">
+
+      <p class="hello">Hello, I'm</p>
+
+      <h1>Addison <span class="accent">Nally.</span></h1>
+
+      <p>
+        Computer Science student at the University
+        of North Texas, with a minor in Cybersecurity.
+      </p>
+
+      <p>
+        I like building things, learning new technologies,
+        and figuring out how stuff works.
+      </p>
+
+    </div>
+  </header>
+
+  <hr class="divider">
+
+
+  <main>
+
+    <!-- About Me -->
+
+    <section id="about" class="about">
+      <div class="container">
+
+        <h2 class="section-heading">A little about me</h2>
+
+        <p>
+          I'm currently studying Computer Science at
+          the University of North Texas. I've always
+          enjoyed working with computers and learning
+          how different technologies work.
+        </p>
+
+        <p>
+          I'm especially interested in software
+          development, cybersecurity, and projects
+          that combine hardware and programming.
+          I enjoy experimenting with new ideas and
+          learning new skills along the way.
+        </p>
+
+        <p>
+          When I'm not working on something computer
+          related, I enjoy exercising, camping,
+          and spending time outdoors.
+        </p>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+
+
+    <!-- Projects -->
+
+    <section id="projects">
+      <div class="container">
+
+        <h2 class="section-heading">Things I've worked on</h2>
+
+        <p class="section-description mb-4">
+          Here's one of the projects I've been a part of.
+        </p>
+
+        <div class="project-card">
+
+          <div class="project-label">Senior Capstone Project</div>
+
+          <h3 class="project-title">Plantify AR</h3>
+
+          <p class="project-tech">
+            Unity &bull; C# &bull; SQLite &bull; Augmented Reality
+          </p>
+
+          <img
+            src="images/plantify.png"
+            alt="Plantify augmented reality application project poster"
+            class="poster"
+          >
+
+          <p>
+            Plantify is an augmented reality app that
+            I worked on with a team for my senior
+            capstone project at UNT.
+          </p>
+
+          <p>
+            The goal of the app is to make learning
+            about plants more interactive and
+            interesting for kids. Users can explore
+            different plants in augmented reality
+            or in a regular 3D view.
+          </p>
+
+          <p>
+            They can also select different parts of
+            a plant, like the roots, leaves, or
+            flowers, to learn more about them.
+          </p>
+
+          <p class="mb-0">
+            We built the app using Unity, C#, and
+            SQLite. It was a good opportunity to
+            get experience working with a team
+            on a larger project and putting what
+            I've learned into practice.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider">
+
+
+    <!-- Skills -->
+
+    <section id="skills">
+      <div class="container">
+
+        <h2 class="section-heading">Skills & interests</h2>
+
+        <p class="section-description mb-4">
+          Some of the languages and technologies
+          I've worked with.
+        </p>
+
+        <div class="skills-list">
+
+          <span class="skill">C++</span>
+          <span class="skill">C#</span>
+          <span class="skill">Python</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">HTML & CSS</span>
+          <span class="skill">Unity</span>
+          <span class="skill">Git</span>
+          <span class="skill">SQL</span>
+          <span class="skill">Cybersecurity</span>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container d-flex flex-wrap
+                justify-content-between gap-2">
+
+      <span>Addison Nally &copy; 2026</span>
+
+      <span>Made with Bootstrap</span>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
